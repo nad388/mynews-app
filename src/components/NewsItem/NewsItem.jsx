@@ -1,6 +1,7 @@
 import { formatTimeAgo } from '../../helpers/formatTimeAgo'
+// import defaultImage from '/bbc-news.jpeg'
+import defaultImage from '../../assets/bbc-news.jpeg'
 import styles from './newsItem.module.css'
-import defaultImage from '/bbc-news.jpeg'
 
 const NewsItem = ({ item }) => {
 	return (
@@ -12,7 +13,7 @@ const NewsItem = ({ item }) => {
 				{item.image ? (
 					<img src={item.image} alt='news' className={styles.wrapper} />
 				) : (
-					defaultImage
+					<img src={defaultImage} alt='news' className={styles.wrapper} />
 				)}
 			</div>
 			<div className={styles.info}>

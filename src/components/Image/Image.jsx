@@ -1,4 +1,5 @@
-import defaultImage from '../../../public/bbc-news.jpeg'
+// import defaultImage from '../../../public/bbc-news.jpeg'
+import defaultImage from '../../assets/bbc-news.jpeg'
 import styles from './image.module.css'
 
 const Image = ({ image }) => {
@@ -7,7 +8,7 @@ const Image = ({ image }) => {
 			{image ? (
 				<img src={image} alt='news' className={styles.image} />
 			) : (
-				defaultImage
+				<img src={defaultImage} alt='news' className={styles.image} />
 			)}
 		</div>
 	)
