@@ -22,4 +22,5 @@
 	background-position: center;
 	background-size: cover;
 	flex-shrink: 0;
+	object-fit: cover;
 }

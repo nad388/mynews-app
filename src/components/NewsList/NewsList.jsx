@@ -1,5 +1,5 @@
 import NewsItem from '../NewsItem/NewsItem'
-import styles from './styles.module.css'
+import styles from './newsList.module.css'
 
 const NewsList = ({ news }) => {
 	return (
